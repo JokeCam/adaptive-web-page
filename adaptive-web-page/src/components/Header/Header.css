@@ -1,0 +1,162 @@
+.header {
+    min-height: 54px;
+    background-color: #ffac04;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo {
+    position: absolute;
+    left: 84px;
+    top: 0;
+}
+
+.header__menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: ITCAvantGardeStd-Md, sans-serif;
+    font-size: 24px;
+    column-gap: 20px;
+    height: 100%;
+    margin-left: 224px;
+}
+
+.header__menu-button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    color:  #FFFFFF;
+    background-color: #FFFFFF;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    font-size: 21.5px;
+    line-height: 32px;
+    cursor: pointer;
+    transition: all 0.5s;
+    vertical-align: middle;
+}
+
+.header__menu-button:nth-of-type(1) {
+    mask-image: url(https://es.bandainamcoent.eu/themes/custom/bne_main/dist/images/logoGames.svg);
+}
+
+.header__menu-button:nth-of-type(1):hover {
+    background-color: black;
+    color: black;
+}
+
+.header__menu-button:nth-of-type(2) {
+    mask-image: url(https://es.bandainamcoent.eu/themes/custom/bne_main/dist/images/logoStore.svg);
+}
+
+.header__menu-button:nth-of-type(2):hover {
+    background-color: #b0030d;
+    color: #b0030d;
+}
+
+.header__menu-button:nth-of-type(3) {
+    mask-image: url(https://es.bandainamcoent.eu/themes/custom/bne_main/dist/images/logoNews.svg);
+}
+
+.header__menu-button:nth-of-type(3):hover {
+    background-color: rgb(8, 6, 97);
+    color: rgb(8, 6, 97);
+}
+
+.header__menu-button:nth-of-type(4) {
+    mask-image: url(https://es.bandainamcoent.eu/themes/custom/bne_main/dist/images/logoEpic.svg);
+}
+
+.header__menu-button:nth-of-type(4):hover {
+    background-color: rgb(119, 0, 167);
+    color: rgb(119, 0, 167);
+}
+
+.header__menu-button:nth-of-type(5) {
+    mask-image: url(https://es.bandainamcoent.eu/themes/custom/bne_main/dist/images/logoSupport.svg);
+}
+
+.header__menu-button:nth-of-type(5):hover {
+    background-color: black;
+    color: black;
+}
+
+.header__search-menu {
+    display: flex;
+    align-items: center;
+    margin-right: 85px;
+}
+
+.header__search-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.header__search-input {
+    font-family: ITCAvantGardeStd-Md, sans-serif;
+    font-size: 16px;
+    padding: 6px 44px 6px 12px;
+    min-width: 250px;
+    min-height: 22px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+}
+
+.header__search-button {
+    position: absolute;
+    height: 32px;
+    width: 34px;
+    right: 2px;
+    mask-image: url('../../images/search-icon.svg');
+    mask-repeat: no-repeat;
+    mask-position: center;
+    background-color: #ffac04;
+    outline: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: opacity 0.5s;
+}
+
+.header__search-button:hover {
+    opacity: 0.7;
+}
+
+.header__search-menu-button {
+    height: 32px;
+    width: 34px;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    background-color: #FFFFFF;
+    outline: none;
+    border: none;
+    border-right: 1px solid #FFFFFF;
+    padding: 0;
+    cursor: pointer;
+    transition: opacity 0.5s;
+}
+
+.header__search-menu-button:hover {
+    opacity: 0.7;
+}
+
+.header__search-menu-button:first-of-type {
+    mask-image: url('../../images/mail-icon.svg');
+    margin-left: 10px;
+}
+
+.header__search-menu-button:last-of-type {
+    mask-image: url('../../images/profile-icon.svg');
+}
+
+.header__search-menu-button-decor {
+    margin: 0 10px;
+    height: 24px;
+    width: 1px;
+    background-color: white;
+}
