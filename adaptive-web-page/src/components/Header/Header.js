@@ -1,11 +1,20 @@
 import "./Header.css"
-import bandaiNamcoLogo from "../../images/bandai-namco-logo.png"
+import { useState } from "react"
 
 function Header() {
+    const [displayLogo, setDisplayLogo] = useState(true)
+
+    window.addEventListener('scroll', function() {
+        if(window.pageYOffset > 0) {
+            setDisplayLogo(false)
+        } else {
+            setDisplayLogo(true)
+        }
+    })
 
     return (
         <header className="header">
-            <img className="header__logo" src={bandaiNamcoLogo} alt="Лого компании 'Bandai Namco'" />
+            <div className={`header__logo ${!displayLogo ? "header__logo_hidden" : ""}`}/>
             <div className="header__menu">
                 <button className="header__menu-button">GAMES</button>
                 <button className="header__menu-button">STORE</button>

@@ -4,12 +4,26 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: fixed;
+    z-index: 2;
+    min-width: 100%;
 }
 
 .header__logo {
     position: absolute;
+    z-index: 5;
     left: 84px;
     top: 0;
+    width: 96px;
+    height: 144px;
+    background-image: url('../../images/bandai-namco-logo.png');
+    background-repeat: no-repeat;
+    transition: all 0.23s;
+}
+
+.header__logo_hidden {
+    height: 54px;
+    background-image: url('../../images/logo-size-s.jpg');
 }
 
 .header__menu {
