@@ -1,20 +1,26 @@
 import "./Header.css"
-import { useState } from "react"
+import { useState, useEffect } from "react"
+import Classnames from "classnames"
 
-function Header() {
+function Header(props) {
     const [displayLogo, setDisplayLogo] = useState(true)
 
-    window.addEventListener('scroll', function() {
-        if(window.pageYOffset > 0) {
+    const headerLogoClass = Classnames({
+        "header__logo": true,
+        "header__logo_hidden": !displayLogo
+    })
+    
+    useEffect(() => {
+        if (props.pageYOffset > 0) {
             setDisplayLogo(false)
         } else {
             setDisplayLogo(true)
         }
-    })
+    }, [props.pageYOffset])
 
     return (
         <header className="header">
-            <div className={`header__logo ${!displayLogo ? "header__logo_hidden" : ""}`}/>
+            <div className={headerLogoClass} />
             <div className="header__menu">
                 <button className="header__menu-button">GAMES</button>
                 <button className="header__menu-button">STORE</button>
