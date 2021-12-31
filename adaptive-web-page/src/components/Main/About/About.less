@@ -1,0 +1,127 @@
+.about {
+    font-family: ITCAvantGardeStd-Md,sans-serif;
+    position: relative;
+    z-index: 1;
+    background-color: #fff;
+    margin-top: 581px;
+    min-width: 100%;
+
+    &__intro-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        top: -120px;
+    }
+
+    &__intro-text-logo {
+        max-width: 300px;
+        max-height: 220px;
+    }
+
+    &__intro-title {
+        font-size: 45px;
+        line-height: 48px;
+        margin-bottom: 22px;
+        margin-top: 12px;
+        text-align: center;
+        color: rgb(48,62,70);
+    }
+
+    &__intro-text-container {
+        display: flex;
+    }
+
+    &__intro-text {
+        margin: 5px 9px;
+        font-size: 13px;
+        line-height: 15px;
+        color: rgb(48,62,70);
+    }
+
+    &__intro-text-span {
+        color: #c19d53;
+    }
+
+    &__text-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: center; */
+    }
+
+    &__text {
+        margin: 0 0 16px;
+        margin-top: 100px;
+        max-width: 540px;
+        font-size: 16px;
+        line-height: 24px;
+        color: #556167;
+        opacity: 0.5;
+        transition: all 0.7s;
+    }
+
+    &__text_slide-in {
+        margin-top: 0;
+        opacity: 1;
+    }
+
+    &__buttons {
+        margin: auto;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 304px;
+        row-gap: 10px;
+    }
+
+    &__buttons-text-container {
+        display: flex;
+        justify-content: space-between;
+        min-width: 100%;
+    }
+
+    &__buttons-text {
+        margin: 0;
+        font-size: 12px;
+        color: #556167;
+    }
+
+    &__buttons-contianer {
+        display: flex;
+        column-gap: 13px;
+        min-width: 100%;
+    }
+
+    &__button {
+        min-height: 50px;
+        border-radius: 4px;
+        padding: 12px 15px;
+        outline: none;
+        border: 1px solid rgb(48, 62, 70);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: transparent;
+        cursor: pointer;
+
+        &:nth-of-type(1) {
+            min-width: 111px;
+            background-size: 75%;   
+            background-image: url(https://fr.bandainamcoent.eu/themes/custom/bne_main/dist/images/platforms/xbox360_dark.png);
+        }
+
+        &:nth-of-type(2) {
+            min-width: 77px;
+            margin-right: 25px;
+            background-size: 60%;
+            background-image: url(https://fr.bandainamcoent.eu/themes/custom/bne_main/dist/images/platforms/ps3_dark.png);
+        }
+
+        &:nth-of-type(3) {
+            min-width: 65px;
+            background-size: 50%;
+            background-image: url(https://fr.bandainamcoent.eu/themes/custom/bne_main/dist/images/platforms/pc_dark_bis.png);
+        }
+    }
+}
