@@ -5,12 +5,12 @@ import Advertisement from "./Advertisement/Advertisement"
 import About from "./About/About"
 
 
-function Main(props) {
+function Main() {
     return (
-        <main className="main">
+        <main className="main" >
             <Advertisement />
             <img className="main__banner" src={dsBanner} alt="Баннер игры Дарк Соулс"/>
-            <About pageYOffset={props.pageYOffset}/>
+            <About />
         </main>
     )
 }

@@ -53,75 +53,8 @@
 
 .about__text {
     margin: 0 0 16px;
-    margin-top: 100px;
     max-width: 540px;
+    color: #556167;
     font-size: 16px;
     line-height: 24px;
-    color: #556167;
-    opacity: 0.5;
-    transition: all 0.7s;
-}
-
-.about__text_slide-in {
-    margin-top: 0;
-    opacity: 1;
-}
-
-.about__buttons {
-    margin: auto;
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 304px;
-    row-gap: 10px;
-}
-
-.about__buttons-text-container {
-    display: flex;
-    justify-content: space-between;
-    min-width: 100%;
-}
-
-.about__buttons-text {
-    margin: 0;
-    font-size: 12px;
-    color: #556167;
-}
-
-.about__buttons-contianer {
-    display: flex;
-    column-gap: 13px;
-    min-width: 100%;
-}
-
-.about__button {
-    min-height: 50px;
-    border-radius: 4px;
-    padding: 12px 15px;
-    outline: none;
-    border: 1px solid rgb(48, 62, 70);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: transparent;
-    cursor: pointer;
-}
-
-.about__button:nth-of-type(1) {
-    min-width: 111px;
-    background-size: 75%;   
-    background-image: url(https://fr.bandainamcoent.eu/themes/custom/bne_main/dist/images/platforms/xbox360_dark.png);
-}
-
-.about__button:nth-of-type(2) {
-    min-width: 77px;
-    margin-right: 25px;
-    background-size: 60%;
-    background-image: url(https://fr.bandainamcoent.eu/themes/custom/bne_main/dist/images/platforms/ps3_dark.png);
-}
-
-.about__button:nth-of-type(3) {
-    min-width: 65px;
-    background-size: 50%;
-    background-image: url(https://fr.bandainamcoent.eu/themes/custom/bne_main/dist/images/platforms/pc_dark_bis.png);
 }

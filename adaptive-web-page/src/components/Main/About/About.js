@@ -1,14 +1,7 @@
 import "./About.css"
 import dsText from "../../../images/dark-souls-text.png"
-import Classnames from "classnames"
 
-function About(props) {
-
-    const aboutTextClass = Classnames({
-        "about__text": true,
-        "about__text_slide-in": props.pageYOffset > 120
-    })
-
+function About() {
     return (
         <section className="about">
             <div className="about__intro-container">
@@ -21,7 +14,7 @@ function About(props) {
                 </div>
             </div>
             <div className="about__text-container">
-                <p className={aboutTextClass}>
+                <p className="about__text">
                     Dark Souls is the new action role-playing game from the developers
                     who brought you Demon’s Souls, FromSoftware. Dark Souls will have
                     many familiar features: A dark fantasy universe, tense dungeon
@@ -29,7 +22,7 @@ function About(props) {
                     interactions. Dark Souls is a spiritual successor to Demon’s, not a
                     sequel.
                 </p>
-                <p className={aboutTextClass}>
+                <p className="about__text">
                     Prepare for a new, despair-inducing world, with a vast, fully-
                     explorable horizon and vertically-oriented landforms. Prepare for a
                     new, mysterious story, centered around the the world of Lodran, but
@@ -48,20 +41,9 @@ function About(props) {
                     game play and an even more punishing difficulty level, Dark Souls
                     will be the most deeply challenging game you play this year.
                 </p>
-                <p className={aboutTextClass}>
+                <p className="about__text">
                     Can you live through a million deaths and earn your legacy? &nbsp; 	&nbsp; 	&nbsp; 	&nbsp; 	&nbsp; 	&nbsp;
                 </p>
-            </div>
-            <div className="about__buttons">
-                <div className="about__buttons-text-container">
-                    <p className="about__buttons-text">07/10/2011</p>
-                    <p className="about__buttons-text">24/08/2012</p>
-                </div>
-                <div className="about__buttons-contianer">
-                    <button className="about__button"></button>
-                    <button className="about__button"></button> 
-                    <button className="about__button"></button>
-                </div>
             </div>
         </section>
     )
