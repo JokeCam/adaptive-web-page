@@ -1,6 +1,7 @@
 import "./About.css"
 import dsText from "../../../images/dark-souls-text.png"
 import Classnames from "classnames"
+import AdditionalParagraph from "./AdditionalParagraph/AdditionalParagraph"
 
 function About(props) {
 
@@ -63,6 +64,7 @@ function About(props) {
                     <button className="about__button"></button>
                 </div>
             </div>
+            <AdditionalParagraph />
         </section>
     )
 }

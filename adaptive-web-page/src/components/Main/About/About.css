@@ -65,6 +65,7 @@
   align-items: center;
   max-width: 304px;
   row-gap: 10px;
+  margin-bottom: 90px;
 }
 .about__buttons-text-container {
   display: flex;
