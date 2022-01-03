@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/study-tasks/static/css/main.9ff4ad00.css",
-    "main.js": "/study-tasks/static/js/main.ce7272d0.js",
+    "main.css": "/study-tasks/static/css/main.1e01eb5f.css",
+    "main.js": "/study-tasks/static/js/main.cba12303.js",
     "static/js/787.5613d28d.chunk.js": "/study-tasks/static/js/787.5613d28d.chunk.js",
     "static/media/ds1-banner.jpg": "/study-tasks/static/media/ds1-banner.71a8f47621c19d660e7b.jpg",
     "static/media/ITCAvantGardeStd-Md.woff2": "/study-tasks/static/media/ITCAvantGardeStd-Md.6a9b61f223b2bd4e19fb.woff2",
@@ -10,12 +10,12 @@
     "static/media/search-icon.svg": "/study-tasks/static/media/search-icon.6c95e853cf5a1eedd6e2.svg",
     "static/media/mail-icon.svg": "/study-tasks/static/media/mail-icon.7be6e02d7bdf46a5f64e.svg",
     "static/media/close-icon.svg": "/study-tasks/static/media/close-icon.244b66874c46718f7e06.svg",
-    "main.9ff4ad00.css.map": "/study-tasks/static/css/main.9ff4ad00.css.map",
-    "main.ce7272d0.js.map": "/study-tasks/static/js/main.ce7272d0.js.map",
+    "main.1e01eb5f.css.map": "/study-tasks/static/css/main.1e01eb5f.css.map",
+    "main.cba12303.js.map": "/study-tasks/static/js/main.cba12303.js.map",
     "787.5613d28d.chunk.js.map": "/study-tasks/static/js/787.5613d28d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9ff4ad00.css",
-    "static/js/main.ce7272d0.js"
+    "static/css/main.1e01eb5f.css",
+    "static/js/main.cba12303.js"
   ]
 }
