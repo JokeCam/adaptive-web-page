@@ -6,10 +6,10 @@
   min-width: calc(100% - 205px);
   padding: 5px 5px 5px 200px;
   font-family: ITCAvantGardeStd-Md, sans-serif;
-  border-bottom: 1px solid #ffad00;
+  border-bottom: 1px solid #FFAC04;
   position: fixed;
   top: 54px;
-  background-color: #fff;
+  background-color: #FFFFFF;
   z-index: 5;
 }
 .advertisement__alignment-container {
@@ -21,18 +21,18 @@
   margin: 0;
 }
 .advertisement__button {
-  background-color: #ffad00;
+  background-color: #FFAC04;
   outline: none;
-  border: 1px solid #ffad00;
-  color: #fff;
+  border: 1px solid #FFAC04;
+  color: #FFFFFF;
   padding: 10px;
   border-radius: 4px;
   cursor: pointer;
   transition: all 0.3s;
 }
 .advertisement__button :hover {
-  color: #ffad00;
-  background-color: #fff;
+  color: #FFAC04;
+  background-color: #FFFFFF;
 }
 .advertisement__close-button {
   mask-image: url('../../../images/close-icon.svg');
@@ -44,7 +44,7 @@
   margin: 0;
   height: 15px;
   width: 15px;
-  background-color: #000;
+  background-color: #000000;
   margin-right: 16px;
   cursor: pointer;
 }

@@ -1,3 +1,5 @@
+@import url("../../../style/color.less");
+
 .advertisement {
     display: flex;
     justify-content: space-between;
@@ -6,10 +8,10 @@
     min-width: calc(100% - 205px);
     padding: 5px 5px 5px 200px;
     font-family: ITCAvantGardeStd-Md, sans-serif;
-    border-bottom: 1px solid rgb(255, 173, 0);
+    border-bottom: 1px solid @yellow;
     position: fixed;
     top: 54px;
-    background-color: #fff;
+    background-color: @white;
     z-index: 5;
 
     &__alignment-container {
@@ -23,18 +25,18 @@
     }
 
     &__button {
-        background-color: rgb(255, 173, 0);
+        background-color: @yellow;
         outline: none;
-        border: 1px solid rgb(255, 173, 0);
-        color: #fff;
+        border: 1px solid @yellow;
+        color: @white;
         padding: 10px;
         border-radius: 4px;
         cursor: pointer;
         transition: all 0.3s;
 
         :hover {
-            color: rgb(255, 173, 0);
-            background-color: #fff;
+            color: @yellow;
+            background-color: @white;
         }
     }
 
@@ -48,7 +50,7 @@
         margin: 0;
         height: 15px;
         width: 15px;
-        background-color: #000;
+        background-color: @black;
         margin-right: 16px;
         cursor: pointer;
     }

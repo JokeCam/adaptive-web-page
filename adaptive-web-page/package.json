@@ -17,9 +17,8 @@
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "start": "npm run build & npm run run",
-    "build": "concurrently --kill-others \"less-watch-compiler --config less-watcher.config.json\"",
-    "run": "\"react-scripts start\"",
+    "start": "concurrently --kill-others \"less-watch-compiler --config less-watcher.config.json\" \"react-scripts start\"",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
