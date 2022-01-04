@@ -1,18 +1,20 @@
+@import url("../../../../style/color.less");
+
 .additional-paragraph {
     padding: 90px 30% 50px;
     margin: auto;
-    background-color: #303e46;
+    background-color: @light-black;
     display: flex;
     flex-direction: column;
     align-items: center;
 
     &__text {
-        color: #fff;
+        color: @white;
         font-family: ITCAvantGardeStd-Md, sans-serif;
         font-size: 16px;
-    }
 
-    &__text-span {
-        font-weight: bold;
-    }
+        & span {
+            font-weight: bold;
+        }
+    }   
 }

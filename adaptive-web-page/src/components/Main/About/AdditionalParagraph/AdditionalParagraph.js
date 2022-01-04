@@ -4,17 +4,17 @@ function AdditionalParagraph() {
     return (
         <div className="additional-paragraph">
             <p className="additional-paragraph__text">
-                <span className="additional-paragraph__text-span">Extremely Deep, Dark &#38; Difficult – </span>
+                <span style={{fontWeight: "bold"}}>Extremely Deep, Dark &#38; Difficult – </span>
                 Unforgiving in its punishment, yet rewarding for the
                 determined – learn to strategize freely and conquer seemingly impossible challenges.
             </p>
             <p className="additional-paragraph__text">
-                <span className="additional-paragraph__text-span">Fully Seamless World – </span>
+                <span style={{fontWeight: "bold"}}>Fully Seamless World – </span>
                 Explore a completely integrated world of dark fantasy where
                 dungeons and areas are seamlessly intertwined, with great height.
             </p>
-            <p className="additional-paragraph__text">
-                <span className="additional-paragraph__text-span">Mastery Earns Progression – </span>
+            <p className="additional-paragraph__text"> 
+                <span style={{fontWeight: "bold"}}>Mastery Earns Progression – </span>
                 Contains 60 hours of gameplay, with nearly 100 uniquely
                 despair-inducing monsters &#38; an incredibly nuanced RPG systems including:
                 weaponry, armor, miracles, faith, and more. Player success depends on their
@@ -23,7 +23,7 @@ function AdditionalParagraph() {
                 weapons.
             </p>
             <p className="additional-paragraph__text">
-                <span className="additional-paragraph__text-span">Network Play – </span>
+                <span style={{fontWeight: "bold"}}>Network Play – </span>
                 Players may cross paths with one another, invading each other for
                 PVP battles, or to play co-op and take on giant boss encounters as a team.
                 Flexible Character Development &#38; Role Play – As the player progresses, they must
@@ -31,13 +31,13 @@ function AdditionalParagraph() {
                 their progression style.
             </p>
             <p className="additional-paragraph__text">
-                <span className="additional-paragraph__text-span">Community – </span>
+                <span style={{fontWeight: "bold"}}>Community – </span>
                 See other real players and empathize with their journey, learn from
                 seeing how others died, find and leave messages for your fellow players; helping
                 them or leading them into death.
             </p>
             <p className="additional-paragraph__text">
-                <span className="additional-paragraph__text-span">Symbolic of Life &#38; Hope – </span>
+                <span style={{fontWeight: "bold"}}>Symbolic of Life &#38; Hope – </span>
                 The Bonfire is an important feature in Dark Souls for many
                 reasons. Though in gameplay it serves as a health and magic recovery and a
                 progression check point, it also happens to be the one place in the dark world
