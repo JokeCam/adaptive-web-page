@@ -56,28 +56,28 @@
   color: black;
 }
 .header__menu-button:nth-of-type(2) {
-  mask-image: url(https://es.bandainamcoent.eu/themes/custom/bne_main/dist/images/logoStore.svg);
+  mask-image: url("../../images/header-mask-logo-games.svg");
 }
 .header__menu-button:nth-of-type(2):hover {
   background-color: #b0030d;
   color: #b0030d;
 }
 .header__menu-button:nth-of-type(3) {
-  mask-image: url(https://es.bandainamcoent.eu/themes/custom/bne_main/dist/images/logoNews.svg);
+  mask-image: url("../../images/header-mask-logo-news.svg");
 }
 .header__menu-button:nth-of-type(3):hover {
   background-color: #080661;
   color: #080661;
 }
 .header__menu-button:nth-of-type(4) {
-  mask-image: url(https://es.bandainamcoent.eu/themes/custom/bne_main/dist/images/logoEpic.svg);
+  mask-image: url("../../images/header-mask-logo-epic.svg");
 }
 .header__menu-button:nth-of-type(4):hover {
   background-color: #7700a7;
   color: #7700a7;
 }
 .header__menu-button:nth-of-type(5) {
-  mask-image: url(https://es.bandainamcoent.eu/themes/custom/bne_main/dist/images/logoSupport.svg);
+  mask-image: url("../../images/header-mask-logo-support.svg");
 }
 .header__menu-button:nth-of-type(5):hover {
   background-color: black;

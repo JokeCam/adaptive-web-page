@@ -17,8 +17,9 @@
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "start": "concurrently --kill-others \"less-watch-compiler --config less-watcher.config.json\" \"react-scripts start\"",
-    "build": "react-scripts build",
+    "start": "npm run build & npm run run",
+    "build": "concurrently --kill-others \"less-watch-compiler --config less-watcher.config.json\"",
+    "run": "\"react-scripts start\"",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -42,7 +43,10 @@
   },
   "devDependencies": {
     "concurrently": "^6.5.1",
+    "css-loader": "^6.5.1",
     "less": "^4.1.2",
-    "less-watch-compiler": "^1.16.3"
+    "less-loader": "^10.2.0",
+    "less-watch-compiler": "^1.16.3",
+    "style-loader": "^3.3.1"
   }
 }
