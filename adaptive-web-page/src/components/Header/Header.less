@@ -1,4 +1,4 @@
-@import url("../../style/color.less");
+@import url("../../common/style/color.less");
 
 .header {
     min-height: 54px;
@@ -54,7 +54,7 @@
         vertical-align: middle;
 
         &:nth-of-type(1) {
-            mask-image: url(https://es.bandainamcoent.eu/themes/custom/bne_main/dist/images/logoGames.svg);
+            mask-image: url("../../images/header-mask-logo-games.svg");
             
             &:hover {
                 background-color: @black;
@@ -63,7 +63,7 @@
         }
 
         &:nth-of-type(2) {
-            mask-image: url("../../images/header-mask-logo-games.svg");
+            mask-image: url("../../images/header-mask-logo-store.svg");
 
             &:hover {
                 background-color: #B0030D;

@@ -49,14 +49,14 @@
   vertical-align: middle;
 }
 .header__menu-button:nth-of-type(1) {
-  mask-image: url(https://es.bandainamcoent.eu/themes/custom/bne_main/dist/images/logoGames.svg);
+  mask-image: url("../../images/header-mask-logo-games.svg");
 }
 .header__menu-button:nth-of-type(1):hover {
   background-color: #000000;
   color: #000000;
 }
 .header__menu-button:nth-of-type(2) {
-  mask-image: url("../../images/header-mask-logo-games.svg");
+  mask-image: url("../../images/header-mask-logo-store.svg");
 }
 .header__menu-button:nth-of-type(2):hover {
   background-color: #B0030D;
