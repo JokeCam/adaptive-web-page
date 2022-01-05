@@ -42,7 +42,7 @@ function About() {
                     will be the most deeply challenging game you play this year.
                 </p>
                 <p className="about__text">
-                    Can you live through a million deaths and earn your legacy? &nbsp; 	&nbsp; 	&nbsp; 	&nbsp; 	&nbsp; 	&nbsp;
+                    Can you live through a million deaths and earn your legacy?
                 </p>
             </div>
         </section>
