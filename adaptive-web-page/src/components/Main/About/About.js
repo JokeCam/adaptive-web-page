@@ -1,14 +1,16 @@
 import "./About.css"
 import dsText from "../../../images/dark-souls-text.png"
-import Classnames from "classnames"
+import classnames from "classnames"
 import AdditionalParagraph from "./AdditionalParagraph/AdditionalParagraph"
 
 function About(props) {
 
-    const aboutTextClass = Classnames({
-        "about__text": true,
-        "about__text_slide-in": props.pageYOffset > 120
-    })
+    const aboutTextClass = classnames(
+        "about__text",
+        {
+            "about__text_slide-in": props.pageYOffset > 120
+        }
+    )
 
     return (
         <section className="about">
@@ -60,7 +62,7 @@ function About(props) {
                 </div>
                 <div className="about__buttons-contianer">
                     <button className="about__button"></button>
-                    <button className="about__button"></button> 
+                    <button className="about__button"></button>
                     <button className="about__button"></button>
                 </div>
             </div>
