@@ -1,8 +1,10 @@
+@import url("../../common/style/color.less");
+
 .about {
     font-family: ITCAvantGardeStd-Md,sans-serif;
     position: relative;
     z-index: 1;
-    background-color: #fff;
+    background-color: @white;
     margin-top: 581px;
     min-width: 100%;
 
@@ -25,7 +27,7 @@
         margin-bottom: 22px;
         margin-top: 12px;
         text-align: center;
-        color: rgb(48,62,70);
+        color: @light-black;
     }
 
     &__intro-text-container {
@@ -36,11 +38,11 @@
         margin: 5px 9px;
         font-size: 13px;
         line-height: 15px;
-        color: rgb(48,62,70);
+        color: @light-black;
     }
 
     &__intro-text-span {
-        color: #c19d53;
+        color: @dark-yellow;
     }
 
     &__text-container {
@@ -56,7 +58,7 @@
         max-width: 540px;
         font-size: 16px;
         line-height: 24px;
-        color: #556167;
+        color: @light-black;
         opacity: 0.5;
         transition: all 0.7s;
     }
@@ -86,7 +88,7 @@
     &__buttons-text {
         margin: 0;
         font-size: 12px;
-        color: #556167;
+        color: @light-black;
     }
 
     &__buttons-contianer {
@@ -100,7 +102,7 @@
         border-radius: 4px;
         padding: 12px 15px;
         outline: none;
-        border: 1px solid rgb(48, 62, 70);
+        border: 1px solid @light-black;
         background-position: center;
         background-repeat: no-repeat;
         background-color: transparent;
@@ -109,20 +111,20 @@
         &:nth-of-type(1) {
             min-width: 111px;
             background-size: 75%;   
-            background-image: url(https://fr.bandainamcoent.eu/themes/custom/bne_main/dist/images/platforms/xbox360_dark.png);
+            background-image: url("../../../images/xbox360-dark.png");
         }
 
         &:nth-of-type(2) {
             min-width: 77px;
             margin-right: 25px;
             background-size: 60%;
-            background-image: url(https://fr.bandainamcoent.eu/themes/custom/bne_main/dist/images/platforms/ps3_dark.png);
+            background-image: url("../../../images/ps3-dark.png");
         }
 
         &:nth-of-type(3) {
             min-width: 65px;
             background-size: 50%;
-            background-image: url(https://fr.bandainamcoent.eu/themes/custom/bne_main/dist/images/platforms/pc_dark_bis.png);
+            background-image: url("../../../images/pc-dark.png");
         }
     }
 }

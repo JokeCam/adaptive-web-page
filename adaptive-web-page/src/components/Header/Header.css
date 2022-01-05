@@ -1,6 +1,6 @@
 .header {
   min-height: 54px;
-  background-color: #ffac04;
+  background-color: #FFAC04;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -49,39 +49,39 @@
   vertical-align: middle;
 }
 .header__menu-button:nth-of-type(1) {
-  mask-image: url(https://es.bandainamcoent.eu/themes/custom/bne_main/dist/images/logoGames.svg);
+  mask-image: url("../../images/header-mask-logo-games.svg");
 }
 .header__menu-button:nth-of-type(1):hover {
-  background-color: black;
-  color: black;
+  background-color: #000000;
+  color: #000000;
 }
 .header__menu-button:nth-of-type(2) {
-  mask-image: url(https://es.bandainamcoent.eu/themes/custom/bne_main/dist/images/logoStore.svg);
+  mask-image: url("../../images/header-mask-logo-store.svg");
 }
 .header__menu-button:nth-of-type(2):hover {
-  background-color: #b0030d;
-  color: #b0030d;
+  background-color: #B0030D;
+  color: #B0030D;
 }
 .header__menu-button:nth-of-type(3) {
-  mask-image: url(https://es.bandainamcoent.eu/themes/custom/bne_main/dist/images/logoNews.svg);
+  mask-image: url("../../images/header-mask-logo-news.svg");
 }
 .header__menu-button:nth-of-type(3):hover {
   background-color: #080661;
   color: #080661;
 }
 .header__menu-button:nth-of-type(4) {
-  mask-image: url(https://es.bandainamcoent.eu/themes/custom/bne_main/dist/images/logoEpic.svg);
+  mask-image: url("../../images/header-mask-logo-epic.svg");
 }
 .header__menu-button:nth-of-type(4):hover {
-  background-color: #7700a7;
-  color: #7700a7;
+  background-color: #7700A7;
+  color: #7700A7;
 }
 .header__menu-button:nth-of-type(5) {
-  mask-image: url(https://es.bandainamcoent.eu/themes/custom/bne_main/dist/images/logoSupport.svg);
+  mask-image: url("../../images/header-mask-logo-support.svg");
 }
 .header__menu-button:nth-of-type(5):hover {
-  background-color: black;
-  color: black;
+  background-color: #000000;
+  color: #000000;
 }
 .header__search-menu {
   display: flex;
@@ -111,7 +111,7 @@
   mask-image: url('../../images/search-icon.svg');
   mask-repeat: no-repeat;
   mask-position: center;
-  background-color: #ffac04;
+  background-color: #FFAC04;
   outline: none;
   border: none;
   padding: 0;
@@ -148,6 +148,6 @@
   margin: 0 10px;
   height: 24px;
   width: 1px;
-  background-color: white;
+  background-color: #FFFFFF;
 }
 /*# sourceMappingURL=Header.css.map */
