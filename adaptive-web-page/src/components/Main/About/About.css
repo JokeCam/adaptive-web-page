@@ -1,13 +1,13 @@
 .about {
-    font-family: ITCAvantGardeStd-Md,sans-serif;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    z-index: 1;
-    background-color: #fff;
-    margin-top: 581px;
-    min-width: 100%;
+  font-family: ITCAvantGardeStd-Md, sans-serif;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+  background-color: #FFFFFF;
+  margin-top: 581px;
+  min-width: 100%;
 }
 .about__intro-container {
   display: flex;
@@ -41,8 +41,8 @@
   color: #C19D53;
 }
 .about__text-container {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 .about__text {
   margin: 0 0 16px;

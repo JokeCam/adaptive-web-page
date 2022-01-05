@@ -1,8 +1,7 @@
-import "./About.css"
-import dsText from "../../../images/dark-souls-text.png"
-<<<<<<< HEAD
-import classnames from "classnames"
-import AdditionalParagraph from "./AdditionalParagraph/AdditionalParagraph"
+import "./About.css";
+import dsText from "../../../images/dark-souls-text.png";
+import classnames from "classnames";
+import AdditionalParagraph from "./AdditionalParagraph/AdditionalParagraph";
 
 function About(props) {
 
@@ -11,11 +10,8 @@ function About(props) {
         {
             "about__text_slide-in": props.pageYOffset > 120
         }
-    )
-=======
->>>>>>> bugfix/fix-banner
+    );
 
-function About() {
     return (
         <section className="about">
             <div className="about__intro-container">
@@ -28,7 +24,7 @@ function About() {
                 </div>
             </div>
             <div className="about__text-container">
-                <p className="about__text">
+                <p className={aboutTextClass}>
                     Dark Souls is the new action role-playing game from the developers
                     who brought you Demon’s Souls, FromSoftware. Dark Souls will have
                     many familiar features: A dark fantasy universe, tense dungeon
@@ -36,7 +32,7 @@ function About() {
                     interactions. Dark Souls is a spiritual successor to Demon’s, not a
                     sequel.
                 </p>
-                <p className="about__text">
+                <p className={aboutTextClass}>
                     Prepare for a new, despair-inducing world, with a vast, fully-
                     explorable horizon and vertically-oriented landforms. Prepare for a
                     new, mysterious story, centered around the the world of Lodran, but
@@ -55,7 +51,7 @@ function About() {
                     game play and an even more punishing difficulty level, Dark Souls
                     will be the most deeply challenging game you play this year.
                 </p>
-                <p className="about__text">
+                <p className={aboutTextClass}>
                     Can you live through a million deaths and earn your legacy?
                 </p>
             </div>
@@ -75,4 +71,4 @@ function About() {
     )
 }
 
-export default About
+export default About;
