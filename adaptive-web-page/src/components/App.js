@@ -1,16 +1,22 @@
-import "./App.css"
-import { useState } from "react"
-import Popup from "./Popup/Popup"
-import Header from "./Header/Header"
-import Main from "./Main/Main"
+import "./App.css";
+import { useState, useEffect } from "react";
+import Popup from "./Popup/Popup";
+import Header from "./Header/Header";
+import Main from "./Main/Main";
 
 function App() {
-  const [pageYOffset, setPageYOffset] = useState(0)
+  const [pageYOffset, setPageYOffset] = useState(0);
 
-  window.addEventListener('scroll', function () {
-    setPageYOffset(window.pageYOffset)
-  })
+  useEffect(() => {
+    window.addEventListener("scroll", windowScrollListener);
+    return () => {
+      window.removeEventListener("scroll", windowScrollListener);
+    };
+  }, []);
 
+  function windowScrollListener() {
+    setPageYOffset(window.pageYOffset);
+  };
 
   return (
     <div className="app">
@@ -19,6 +25,6 @@ function App() {
       <Main pageYOffset={pageYOffset}/>
     </div>
   );
-}
+};
 
 export default App;

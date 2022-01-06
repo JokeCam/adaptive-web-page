@@ -1,4 +1,4 @@
-import "./AdditionalParagraph.css"
+import "./AdditionalParagraph.css";
 
 function AdditionalParagraph() {
     return (
@@ -45,6 +45,6 @@ function AdditionalParagraph() {
             </p>
         </div>
     )
-}
+};
 
-export default AdditionalParagraph
+export default AdditionalParagraph;

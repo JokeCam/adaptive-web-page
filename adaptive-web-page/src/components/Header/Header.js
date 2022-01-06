@@ -7,7 +7,7 @@ function Header(props) {
         {
             "header__logo_hidden": props.pageYOffset > 0
         }
-    )
+    );
 
     return (
         <header className="header">
@@ -30,6 +30,6 @@ function Header(props) {
             </div>
         </header>
     )
-}
+};
 
-export default Header
+export default Header;

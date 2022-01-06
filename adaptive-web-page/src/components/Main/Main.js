@@ -13,6 +13,6 @@ function Main(props) {
             <About pageYOffset={props.pageYOffset}/>
         </main>
     )
-}
+};
 
 export default Main;

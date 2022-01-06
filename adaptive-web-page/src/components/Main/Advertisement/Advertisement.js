@@ -1,4 +1,4 @@
-import "./Advertisement.css"
+import "./Advertisement.css";
 
 function Advertisement() {
 
@@ -11,6 +11,6 @@ function Advertisement() {
             <button className="advertisement__close-button"></button>
         </div>
     )
-}
+};
 
-export default Advertisement
+export default Advertisement;

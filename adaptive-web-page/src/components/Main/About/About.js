@@ -69,6 +69,6 @@ function About(props) {
             <AdditionalParagraph />
         </section>
     )
-}
+};
 
 export default About;
