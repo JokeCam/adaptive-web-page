@@ -1,5 +1,5 @@
-import "./Header.css"
-import classnames from "classnames"
+import "./Header.css";
+import classnames from "classnames";
 
 function Header(props) {
     const headerLogoClass = classnames(
