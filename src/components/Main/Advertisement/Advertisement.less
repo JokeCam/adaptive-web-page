@@ -1,0 +1,58 @@
+@import url("../../../common/style/color.less");
+
+.advertisement {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 40px;
+    min-width: calc(100% - 205px);
+    padding: 5px 5px 5px 200px;
+    font-family: ITCAvantGardeStd-Md, sans-serif;
+    border-bottom: 1px solid @yellow;
+    position: fixed;
+    top: 54px;
+    background-color: @white;
+    z-index: 5;
+
+    &__alignment-container {
+        display: flex;
+        align-items: center;
+        column-gap: 50px;
+    }
+
+    &__text {
+        margin: 0;
+    }
+
+    &__button {
+        background-color: @yellow;
+        outline: none;
+        border: 1px solid @yellow;
+        color: @white;
+        padding: 10px;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: all 0.3s;
+
+        :hover {
+            color: @yellow;
+            background-color: @white;
+        }
+    }
+
+    &__close-button {
+        background-image: url('../../../images/close-icon.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: @transparent;
+        filter: @svg-black-filter;
+        outline: none;
+        border: none;
+        padding: 0;
+        margin: 0;
+        height: 15px;
+        width: 15px;
+        margin-right: 16px;
+        cursor: pointer;
+    }
+}
