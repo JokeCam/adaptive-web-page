@@ -1,7 +1,8 @@
-import "./About.less";
-import dsText from "../../../images/dark-souls-text.png";
 import classnames from "classnames";
 import AdditionalParagraph from "./AdditionalParagraph/AdditionalParagraph";
+import dsText from "../../../images/dark-souls-text.png";
+
+import "./About.less";
 
 function About(props) {
 
