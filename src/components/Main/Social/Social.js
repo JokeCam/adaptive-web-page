@@ -1,6 +1,6 @@
 import "./Social.less"
 
-import { useRef, useEffect } from "react"
+import { useRef, useEffect, useState } from "react"
 
 import facebookIcon from "../../../images/social-facebook-icon.svg"
 import twitterIcon from "../../../images/social-twitter-icon.svg"
@@ -8,14 +8,28 @@ import youtubeIcon from "../../../images/social-youtube-icon.svg"
 import twitchIcon from "../../../images/social-twitch-icon.svg"
 import instagramIcon from "../../../images/social-instagram-icon.svg"
 
-function Social(props) {
+function Social() {
+    const [pageYOffset, setPageYOffset] = useState(0);
     const backgroundImageRef = useRef(null)
 
     useEffect(() => {
-        if (props.pageYOffset > 1840 && props.pageYOffset < 2160) {
-            backgroundImageRef.current.style.backgroundPosition = `0 ${(-props.pageYOffset + 1840) / 3.5}px`
+        window.addEventListener("scroll", windowScrollListener);
+
+        return () => {
+            window.removeEventListener("scroll", windowScrollListener);
+        };
+
+    }, []);
+
+    useEffect(() => {
+        if (pageYOffset > 1840 && pageYOffset < 2160) {
+            backgroundImageRef.current.style.backgroundPosition = `0 ${(-pageYOffset + 1840) / 3.5}px`
         }
-    }, [props.pageYOffset])
+    }, [pageYOffset])
+
+    function windowScrollListener() {
+        setPageYOffset(window.pageYOffset);
+    };
 
     return (
         <section className="social" ref={backgroundImageRef}>
@@ -48,7 +62,7 @@ function Social(props) {
                     </a>
                 </div>
             </div>
-        </section>
+        </section> 
     )
 }
 
