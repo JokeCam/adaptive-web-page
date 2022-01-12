@@ -64,13 +64,21 @@
 
     &__submit-button {
         flex-basis: 25%;
-        padding: 12px 40px;
+        padding: 11px 40px;
         border-radius: 4px;
         font-size: 13px;
         background-color: @dark-yellow;
         color: @white;
         outline: none;
-        border: none;
+        cursor: pointer;
+        border: 1px solid transparent;
+        transition: all 0.7s;
+
+        &:hover {
+            color: @dark-yellow;
+            background-color: transparent;
+            border-color: @dark-yellow;
+        }
     }
 
     &__link {
