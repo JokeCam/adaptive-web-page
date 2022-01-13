@@ -6,9 +6,9 @@ import Main from "./Main/Main";
 function App() {
   return (
     <div className="app">
-      <Header pageYOffset={pageYOffset}/>
+      <Header />
       <Popup />
-      <Main pageYOffset={pageYOffset}/>
+      <Main />
     </div>
   );
 };

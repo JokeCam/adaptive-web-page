@@ -2,6 +2,7 @@ import Advertisement from "./Advertisement/Advertisement";
 import About from "./About/About";
 import Social from "./Social/Social";
 import Links from "./Links/Links";
+import Rating from "./Rating/Rating"
 import classNames from "classnames";
 import { useState, useEffect } from "react"
 
@@ -38,6 +39,7 @@ function Main() {
             <About />
             <Social />
             <Links />
+            <Rating />
         </main>
     )
 };
