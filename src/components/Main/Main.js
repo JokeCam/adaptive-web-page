@@ -3,6 +3,7 @@ import About from "./About/About";
 import Social from "./Social/Social";
 import Links from "./Links/Links";
 import Rating from "./Rating/Rating"
+import CarouselMain from "./CarouselMain/CarouselMain"
 import classNames from "classnames";
 import { useState, useEffect } from "react"
 
@@ -40,6 +41,7 @@ function Main() {
             <Social />
             <Links />
             <Rating />
+            <CarouselMain />
         </main>
     )
 };
