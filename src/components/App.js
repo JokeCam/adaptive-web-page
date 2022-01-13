@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="app">
       <Header />
-      {/* <Popup /> */}
+      <Popup />
       <Main />
     </div>
   );
