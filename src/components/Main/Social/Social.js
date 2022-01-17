@@ -22,10 +22,25 @@ function Social() {
     }, []);
 
     useEffect(() => {
-        if (pageYOffset > 1840 && pageYOffset < 2160) {
-            backgroundImageRef.current.style.backgroundPosition = `0 ${(-pageYOffset + 1840) / 3.5}px`
+        if(window.innerWidth < 770) {
+            backgroundImageRef.current.style.backgroundPosition = "center";
+            return
         }
-    }, [pageYOffset])
+
+        if(window.innerWidth < 1025) {
+            backgroundImageRef.current.style.backgroundPosition = "initial";
+            return
+        }
+
+        if(window.innerWidth < 1200) {
+            backgroundImageRef.current.style.backgroundPosition = "center";
+            return
+        }
+
+        if (pageYOffset > 1840 && pageYOffset < 2160) {
+            backgroundImageRef.current.style.backgroundPosition = `0 ${(-pageYOffset + 1840) / 3.5}px`;
+        }
+    }, [pageYOffset]);
 
     function windowScrollListener() {
         setPageYOffset(window.pageYOffset);

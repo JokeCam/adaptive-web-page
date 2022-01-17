@@ -27,7 +27,7 @@ function Links() {
     }, []);
 
     function windowScrollListener() {
-        
+
         setPageYOffset(window.pageYOffset);
     };
 
@@ -38,26 +38,30 @@ function Links() {
                 <h3 className="links__title links__title_align-left">Learn more about DARK SOULS Universe</h3>
                 <button className="links__learn-more-button">DISCOVER THE UNIVERSE</button>
             </div>
-            <div className={linksMerchContainerClass}>
-                <img className="links__merch-image" src={merchImageOrange} />
-                <div className="links__text-container">
-                    <div className="links__title-alignment-container">
-                        <img className="links__merch-icon" src={bandaiNamcoStore} />
-                        <h3 className="links__merch-title">Exclusive product derived from your favorites universes!</h3>
+            <div className="links__primary-merch-container">
+                <div className={linksMerchContainerClass}>
+                    <img className="links__merch-image" src={merchImageOrange} />
+                    <div className="links__text-container">
+                        <div className="links__title-alignment-container">
+                            <img className="links__merch-icon" src={bandaiNamcoStore} />
+                            <h3 className="links__merch-title">Exclusive product derived from your favorites universes!</h3>
+                        </div>
+                        <img className="links__merch-image-media" src={merchImageOrange} />
+                        <button className="links__merch-button links__merch-button_orange">SEE OFFICIAL STORE</button>
                     </div>
-                    <button className="links__merch-button links__merch-button_orange">SEE OFFICIAL STORE</button>
                 </div>
-            </div>
-            <div className={linksMerchContainerClass}>
-                <img className="links__merch-image" src={merchImagePurple} />
-                <div className="links__text-container">
-                    <div className="links__title-alignment-container">
-                        <img className="links__merch-icon" src={bandaiNamcoEpic} />
-                        <h3 className="links__merch-title">Swap your points on our official EP!C Rewards Club</h3>
+                <div className={linksMerchContainerClass}>
+                    <img className="links__merch-image" src={merchImagePurple} />
+                    <div className="links__text-container">
+                        <div className="links__title-alignment-container">
+                            <img className="links__merch-icon" src={bandaiNamcoEpic} />
+                            <h3 className="links__merch-title">Swap your points on our official EP!C Rewards Club</h3>
+                        </div>
+                        <img className="links__merch-image-media" src={merchImagePurple} />
+                        <p className="links__subtitle">Already got the game ?</p>
+                        <a className="links__link">REGISTER IT FOR EP!C POINTS</a>
+                        <button className="links__merch-button links__merch-button_light-blue">OK LET'S GO</button>
                     </div>
-                    <p className="links__subtitle">Already got the game ?</p>
-                    <a className="links__link">REGISTER IT FOR EP!C POINTS</a>
-                    <button className="links__merch-button links__merch-button_light-blue">OK LET'S GO</button>
                 </div>
             </div>
         </section>

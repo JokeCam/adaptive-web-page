@@ -9,6 +9,11 @@
     position: fixed;
     z-index: 10;
     min-width: 100%;
+    
+    @media (max-width: 1025px) {
+        min-height: 40px;
+        overflow: hidden;
+    }
 
     &__logo {
         position: absolute;
@@ -18,12 +23,41 @@
         width: 96px;
         height: 144px;
         background-image: url('../../images/bandai-namco-logo.png');
+        background-position: center;
+        background-size: 100% 100%;
         background-repeat: no-repeat;
         transition: all 0.23s;
 
         &_hidden {
             height: 54px;
             background-image: url('../../images/logo-size-s.jpg');
+
+            @media (max-width: 1025px) {
+                background-image: url('../../images/bandai-namco-logo.png');
+                width: 60px;
+                height: 90px;
+                top: -32px;
+                left: calc(50% - 30px);
+            }
+        }
+
+        @media (max-width: 1200px) {
+            left: 0;
+        }
+
+        @media (max-width: 1025px) {
+            width: 60px;
+            height: 90px;
+            top: -32px;
+            left: calc(50% - 30px);
+        }
+
+        @media (max-width: 770px) {
+            left: 60px;
+            top: -10px;
+            width: 30px;
+            height: 45px;
+            border-radius: 4px;
         }
     }
 
@@ -36,6 +70,32 @@
         column-gap: 20px;
         height: 100%;
         margin-left: 224px;
+
+        @media (max-width: 1200px) {
+            margin-left: 130px;
+        }
+
+        @media (max-width: 1025px) {
+            margin-left: 16px;
+        }
+    }
+
+    &__menu-button {
+        display: none;
+        background-image: url("../../images/burger-menu-button-icon.svg");
+        background-color: transparent;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        padding: 0;
+        border: none;
+        width: 28px;
+        height: 28px;
+        cursor: pointer;
+
+        @media (max-width: 1025px) {
+            display: block;
+        }
     }
 
     &__menu-link {
@@ -92,12 +152,20 @@
                 filter: @svg-black-filter;
             }
         }
+
+        @media (max-width: 1025px) {
+            display: none;
+        }
     }
 
     &__search-menu {
         display: flex;
         align-items: center;
         margin-right: 85px;
+
+        @media (max-width: 1025px) {
+            margin-right: 10px;
+        }
     }
 
     &__search-container {
@@ -115,6 +183,10 @@
         outline: none;
         border: none;
         border-radius: 4px;
+
+        @media (max-width: 1200px) {
+            display: none;
+        }
     }
 
     &__search-button {
@@ -138,6 +210,12 @@
         &:hover {
             opacity: 0.7;
         }
+
+        @media (max-width: 1200px) {
+            mask-image: url('../../images/search-icon-white.svg');
+            -webkit-mask-image: url('../../images/search-icon-white.svg');
+            background-color: @white;
+        }
     }
 
     &__search-menu-button {
@@ -160,11 +238,17 @@
         &:first-of-type {
             background-image: url('../../images/mail-icon.svg');
             margin-left: 10px;
+
+            @media (max-width: 1200px) {
+                height: 36px;
+                width: 36px;
+                margin-left: 0;
+            }
         }
 
         &:last-of-type {
             background-image: url('../../images/profile-icon.svg');
-        }    
+        }
     }
     
     &__search-menu-button-decor {
@@ -172,5 +256,13 @@
         height: 24px;
         width: 1px;
         background-color: @white;
+
+        &_first {
+            display: none;
+
+            @media (max-width: 1200px) {
+                display: block;
+            }
+        }
     }
 }
