@@ -45,19 +45,19 @@ function Social() {
                 <h3 className="social__title">Follow us</h3>
                 <p className="social__subtitle">Become part of the community</p>
                 <div className="social__link-container">
-                    <a className="social__link" href="https://www.facebook.com/BandaiNamcoEU/" target="_blank">
+                    <a className="social__link" href="https://www.facebook.com/BandaiNamcoEU/" target="_blank" href="#">
                         <img className="social__link-image" src={facebookIcon} />
                     </a>
-                    <a className="social__link" href="https://twitter.com/DarkSoulsGame" target="_blank">
+                    <a className="social__link" href="https://twitter.com/DarkSoulsGame" target="_blank" href="#">
                         <img className="social__link-image" src={twitterIcon} />
                     </a>
-                    <a className="social__link" href="https://www.youtube.com/user/NamcoBandaiGamesEU" target="_blank">
+                    <a className="social__link" href="https://www.youtube.com/user/NamcoBandaiGamesEU" target="_blank" href="#">
                         <img className="social__link-image" src={youtubeIcon} />
                     </a>
-                    <a className="social__link" href="https://www.twitch.tv/bandainamcoeurope" target="_blank">
+                    <a className="social__link" href="https://www.twitch.tv/bandainamcoeurope" target="_blank" href="#">
                         <img className="social__link-image" src={twitchIcon} />
                     </a>
-                    <a className="social__link" href="https://www.instagram.com/accounts/login/" target="_blank">
+                    <a className="social__link" href="https://www.instagram.com/accounts/login/" target="_blank" href="#">
                         <img className="social__link-image" src={instagramIcon} />
                     </a>
                 </div>
