@@ -10,6 +10,11 @@
     row-gap: 56px;
     background-color: @light-grey;
 
+    @media (max-width: 1025px) {
+        padding: 30px 16px 25px;
+        row-gap: 36px;
+    }
+
     &__learn-more-container {
         background-image: url("../../../images/learn-more-banner.jpg");
         background-repeat: no-repeat;
@@ -23,8 +28,15 @@
 
         @media (max-width: 1200px) {
             justify-content: flex-start;
-            padding-left: 12px;
+            padding-left: 12px ;
             column-gap: 25px;
+        }
+
+        @media (max-width: 1025px) {
+            flex-direction: column;
+            min-height: 400px;
+            padding-left: 0;
+            justify-content: center;
         }
     }
 
@@ -41,6 +53,10 @@
         max-width: 260px;
         color: @white;
         text-align: left;
+
+        @media (max-width: 1025px) {
+            text-align: center;
+        }
     }
 
     &__learn-more-button {
@@ -69,6 +85,11 @@
 
         @media (max-width: 1200px) {
             column-gap: 2%;
+        }
+
+        @media (max-width: 1025px) {
+            flex-direction: column;
+            row-gap: 15px;
         }
     }
 
@@ -131,6 +152,10 @@
         color: @white;
         text-align: center;
         margin: 0 0 50px;
+
+        @media (max-width: 1025px) {
+            font-size: 16px;
+        }
     }
 
     &__merch-image-media {
@@ -181,6 +206,10 @@
         font-size: 20px;
         letter-spacing: 1.5px;
         margin: 0 0 10px;
+
+        @media (max-width: 1025px) {
+            font-size: 16px;
+        }
     }
 
     &__link {
@@ -190,6 +219,10 @@
         text-decoration: underline;
         margin-bottom: 45px;
         cursor: pointer;
+
+        @media (max-width: 1025px) {
+            font-size: 14px;
+        }
 
         &:hover {
             text-decoration: transparent;
