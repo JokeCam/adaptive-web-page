@@ -3,8 +3,9 @@ import { useEffect, useState } from "react"
 
 import "./Header.less";
 
-function Header() {
+function Header(props) {
     const [pageYOffset, setPageYOffset] = useState(0);
+  
     const headerLogoClass = classnames(
         "header__logo",
         {

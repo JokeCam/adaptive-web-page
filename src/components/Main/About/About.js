@@ -1,6 +1,9 @@
 import classnames from "classnames";
 import { useState, useEffect } from "react"
 import AdditionalParagraph from "./AdditionalParagraph/AdditionalParagraph";
+import dsText from "../../../images/dark-souls-text.png";
+
+import "./About.less";
 
 import "./About.less";
 import dsText from "../../../images/dark-souls-text.png";
