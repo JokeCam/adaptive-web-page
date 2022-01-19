@@ -22,24 +22,15 @@ function Social() {
     }, []);
 
     useEffect(() => {
-        if(window.innerWidth < 770) {
+        if (window.innerWidth < 770) {
             backgroundImageRef.current.style.backgroundPosition = "center";
-            return
-        }
-
-        if(window.innerWidth < 1025) {
+        } else if (window.innerWidth < 1025) {
             backgroundImageRef.current.style.backgroundPosition = "initial";
-            return
-        }
-
-        if(window.innerWidth < 1200) {
+        } else if (window.innerWidth < 1200) {
             backgroundImageRef.current.style.backgroundPosition = "center";
-            return
-        }
-
-        if (pageYOffset > 1840 && pageYOffset < 2160) {
+        } else if (pageYOffset > 1840 && pageYOffset < 2160) {
             backgroundImageRef.current.style.backgroundPosition = `0 ${(-pageYOffset + 1840) / 3.5}px`;
-        }
+        };
     }, [pageYOffset]);
 
     function windowScrollListener() {
@@ -77,7 +68,7 @@ function Social() {
                     </a>
                 </div>
             </div>
-        </section> 
+        </section>
     )
 }
 

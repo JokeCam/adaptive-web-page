@@ -29,7 +29,7 @@ function Header() {
         <header className="header">
             <div className={headerLogoClass}/>
             <div className="header__menu">
-                <button className="header__menu-button"></button>
+                <button className="header__menu-button"/>
                 <a className="header__menu-link" target="_blank" href="#">GAMES</a>
                 <a className="header__menu-link" target="_blank" href="#">STORE</a>
                 <a className="header__menu-link" target="_blank" href="#">NEWS</a>
