@@ -1,9 +1,8 @@
-import "./Main.less";
-import dsBanner from "../../images/ds1-banner.jpg";
-
 import Advertisement from "./Advertisement/Advertisement";
 import About from "./About/About";
+import dsBanner from "../../images/ds1-banner.jpg";
 
+import "./Main.less";
 
 function Main(props) {
     return (

@@ -1,5 +1,6 @@
-import "./Header.less";
 import classnames from "classnames";
+
+import "./Header.less";
 
 function Header(props) {
     const headerLogoClass = classnames(
