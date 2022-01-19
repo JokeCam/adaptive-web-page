@@ -1,17 +1,35 @@
 import classnames from "classnames";
+import { useState, useEffect } from "react"
 import AdditionalParagraph from "./AdditionalParagraph/AdditionalParagraph";
 import dsText from "../../../images/dark-souls-text.png";
 
 import "./About.less";
 
-function About(props) {
+import "./About.less";
+import dsText from "../../../images/dark-souls-text.png";
+
+function About() {
+    const [pageYOffset, setPageYOffset] = useState(0);
 
     const aboutTextClass = classnames(
         "about__text",
         {
-            "about__text_slide-in": props.pageYOffset > 120
+            "about__text_slide-in": pageYOffset > 120
         }
     );
+
+    useEffect(() => {
+        window.addEventListener("scroll", windowScrollListener);
+
+        return () => {
+            window.removeEventListener("scroll", windowScrollListener);
+        };
+
+    }, []);
+
+    function windowScrollListener() {
+        setPageYOffset(window.pageYOffset);
+    };
 
     return (
         <section className="about">
