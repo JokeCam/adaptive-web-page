@@ -9,8 +9,6 @@ import eldenRing from "../../../images/elden-ring.png";
 import digimonSurive from "../../../images/digimon-survive.png";
 
 import "./CarouselMain.less";
-import "slick-carousel/slick/slick.css";;
-import "slick-carousel/slick/slick-theme.css";;
 
 function CarouselMain() {
     const sliderRef = useRef()

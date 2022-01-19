@@ -4,16 +4,16 @@ import Social from "./Social/Social";
 import Links from "./Links/Links";
 import Rating from "./Rating/Rating"
 import CarouselMain from "./CarouselMain/CarouselMain"
-import classNames from "classnames";
 import { useState, useEffect } from "react"
+import classnames from "classnames";
 
-import "./Main.less";
 import dsBanner from "../../images/ds1-banner.jpg";
+import "./Main.less";
 
-function Main() {
+function Main(props) {
     const [pageYOffset, setPageYOffset] = useState(0);
-
-    const mainBannerClass = classNames(
+      
+    const mainBannerClass = classnames(
         "main__banner",
         {
             "main__banner_disabled": pageYOffset > 450,
