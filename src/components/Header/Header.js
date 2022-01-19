@@ -30,11 +30,11 @@ function Header(props) {
         <header className="header">
             <div className={headerLogoClass}/>
             <div className="header__menu">
-                <button className="header__menu-button">GAMES</button>
-                <button className="header__menu-button">STORE</button>
-                <button className="header__menu-button">NEWS</button>
-                <button className="header__menu-button">EPIC</button>
-                <button className="header__menu-button">SUPPORT</button>
+                <a className="header__menu-link" target="_blank" href="#">GAMES</a>
+                <a className="header__menu-link" target="_blank" href="#">STORE</a>
+                <a className="header__menu-link" target="_blank" href="#">NEWS</a>
+                <a className="header__menu-link" target="_blank" href="#">EPIC</a>
+                <a className="header__menu-link" target="_blank" href="#">SUPPORT</a>
             </div>
             <div className="header__search-menu">
                 <div className="header__search-container">

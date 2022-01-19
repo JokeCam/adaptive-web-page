@@ -3,7 +3,7 @@ import About from "./About/About";
 import Social from "./Social/Social";
 import Links from "./Links/Links";
 import Rating from "./Rating/Rating"
-import CarouselMain from "./CarouselMain/CarouselMain"
+import Carousel from "./Carousel/Carousel"
 import { useState, useEffect } from "react"
 import classnames from "classnames";
 
@@ -41,7 +41,7 @@ function Main(props) {
             <Social />
             <Links />
             <Rating />
-            <CarouselMain />
+            <Carousel />
         </main>
     )
 };

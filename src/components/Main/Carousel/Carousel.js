@@ -8,9 +8,9 @@ import darkSoulsTrilogy from "../../../images/dark-souls-trilogy.png";
 import eldenRing from "../../../images/elden-ring.png";
 import digimonSurive from "../../../images/digimon-survive.png";
 
-import "./CarouselMain.less";
+import "./Carousel.less";
 
-function CarouselMain() {
+function Carousel() {
     const sliderRef = useRef()
 
     function handleClickNext() {
@@ -44,33 +44,45 @@ function CarouselMain() {
                 easing="ease-in-out"
             >
                 <div className="carousel__card">
-                    <img className="carousel__image" src={eldenRing} />
-                    <h3 className="carousel__card-title">ELDEN RING</h3>
+                    <a className="carousel__link" target="_blank" href="#">
+                        <img className="carousel__image" src={eldenRing} />
+                        <h3 className="carousel__card-title">ELDEN RING</h3>
+                    </a>
                 </div>
 
                 <div className="carousel__card">
-                    <img className="carousel__image" src={darkSoulsTrilogy} />
-                    <h3 className="carousel__card-title">DARK SOULS TRILOGY</h3>
+                    <a className="carousel__link" target="_blank" href="#">
+                        <img className="carousel__image" src={darkSoulsTrilogy} />
+                        <h3 className="carousel__card-title">DARK SOULS TRILOGY</h3>
+                    </a>
                 </div>
 
                 <div className="carousel__card">
-                    <img className="carousel__image" src={darkSoulsRemastered} />
-                    <h3 className="carousel__card-title">DARK SOULS REMASTERED</h3>
+                    <a className="carousel__link" target="_blank" href="#">
+                        <img className="carousel__image" src={darkSoulsRemastered} />
+                        <h3 className="carousel__card-title">DARK SOULS REMASTERED</h3>
+                    </a>
                 </div>
 
                 <div className="carousel__card">
-                    <img className="carousel__image" src={darkSoulsThree} />
-                    <h3 className="carousel__card-title">DARK SOULS III</h3>
+                    <a className="carousel__link" target="_blank" href="#">
+                        <img className="carousel__image" src={darkSoulsThree} />
+                        <h3 className="carousel__card-title">DARK SOULS III</h3>
+                    </a>
                 </div>
 
                 <div className="carousel__card">
-                    <img className="carousel__image" src={darkSoulsTwo} />
-                    <h3 className="carousel__card-title">DARK SOULS II</h3>
+                    <a className="carousel__link" target="_blank" href="#">
+                        <img className="carousel__image" src={darkSoulsTwo} />
+                        <h3 className="carousel__card-title">DARK SOULS II</h3>
+                    </a>
                 </div>
 
                 <div className="carousel__card">
-                    <img className="carousel__image" src={digimonSurive} />
-                    <h3 className="carousel__card-title">DIGIMON SURVIVE</h3>
+                    <a className="carousel__link" target="_blank" href="#">
+                        <img className="carousel__image" src={digimonSurive} />
+                        <h3 className="carousel__card-title">DIGIMON SURVIVE</h3>
+                    </a>
                 </div>
             </Slider>
             <div className="carousel__link-button-container">
@@ -81,4 +93,4 @@ function CarouselMain() {
     );
 };
 
-export default CarouselMain;
+export default Carousel;
