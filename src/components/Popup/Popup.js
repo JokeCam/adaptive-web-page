@@ -1,6 +1,7 @@
-import "./Popup.less"
 import { useState } from "react"
 import classnames from "classnames"
+
+import "./Popup.less"
 
 function Popup() {
     const [isPopupDisplayed, setIsPopupDisplayed] = useState(true)
