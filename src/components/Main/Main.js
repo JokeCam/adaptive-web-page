@@ -1,14 +1,13 @@
-import "./Main.less";
-import dsBanner from "../../images/ds1-banner.jpg";
-
 import Advertisement from "./Advertisement/Advertisement";
 import About from "./About/About";
 import Social from "./Social/Social";
-import classNames from "classnames";
+import classnames from "classnames";
+import dsBanner from "../../images/ds1-banner.jpg";
 
+import "./Main.less";
 
 function Main(props) {
-    const mainBannerClass = classNames(
+    const mainBannerClass = classnames(
         "main__banner",
         {
             "main__banner_disabled": props.pageYOffset > 450,
