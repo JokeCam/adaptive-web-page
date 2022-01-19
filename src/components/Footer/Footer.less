@@ -1,0 +1,211 @@
+@import url("../../common/style/color.less");
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    font-family: ITCAvantGardeStd-Bk, sans-serif;
+
+    &__main-container {
+        background-color: @darker-blue;
+    }
+
+    &__main-links {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 84px 60px;
+    }
+
+    &__about-links {
+        display: flex;
+        align-items: center;
+    }
+
+    &__about-links-image {
+        width: 60px;
+        height: 80px;
+    }
+
+    &__about-link {
+        color: @white;
+        margin-left: 35px;
+        font-size: 18px;
+        line-height: 1.67;
+        font-weight: 400;
+        cursor: pointer;
+
+        &:hover {
+            color: @orange;
+        }
+    }
+
+    &__social-links {
+        display: flex;
+        align-items: center;
+    }
+
+    &__social-link-icon-container {
+        width: 34px;
+        height: 34px;
+        background-color: @lighter-blue;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 16px;
+        cursor: pointer;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &:hover {
+            background-color: @orange;
+        }
+    }
+
+    &__social-link-icon {
+        width: 22px;
+        height: 22px;
+    }
+
+    &__additional-links {
+        display: flex;
+        align-items: center;
+        margin: 0 0 84px 84px;
+    }
+
+    &__additional-links-container {
+        margin-right: 90px;
+
+        &:last-child {
+            margin-right: 110px;
+        }
+    }
+
+    &__additional-link-text {
+        color: @white;
+        font-size: 12px;
+        letter-spacing: .4px;
+        line-height: 1.2;
+    }
+
+    &__additional-link {
+        color: @white;
+        font-size: 24px;
+        font-weight: 300;
+        letter-spacing: -.7px;
+        line-height: 1.25;
+        cursor: pointer;
+        &:hover {
+            color: @orange;
+        }
+
+        &::after {
+            background: url(https://www.bandainamcoent.eu/themes/custom/bne_main/dist/images/ico-sort-arrow.svg) no-repeat 0 0;
+            background-size: 100% auto;
+            content: "";
+            display: inline-block;
+            height: 8px;
+            margin-left: 20px;
+            margin-right: 0;
+            margin-top: 5px;
+            opacity: .5;
+            padding-bottom: 10px;
+            transform: rotate(-90deg);
+            width: 11px;
+        }
+
+        &_last-one::after {
+            background: url(https://www.bandainamcoent.eu/themes/custom/bne_main/dist/images/ico-sort-arrow.svg) no-repeat 0 0;
+            background-size: 100% auto;
+            content: "";
+            display: inline-block;
+            height: 8px;
+            margin-left: 20px;
+            margin-right: 0;
+            margin-top: 0;
+            opacity: .5;
+            padding-bottom: 10px;
+            transform: rotate(-180deg);
+            width: 11px;
+        }
+    }
+
+    &__services-text {
+        color: @white;
+        font-size: 12px;
+        letter-spacing: .4px;
+        line-height: 1.2;
+        margin-bottom: 8px;
+    }
+
+    &__services-link {
+        color: @white;
+        margin-left: 25px;
+        border: none;
+        padding: 0;
+        color: @transparent;
+        background-color: @transparent;
+        background-repeat: no-repeat;
+        background-position: center;
+        filter: @svg-white-filter;
+        font-size: 16px;
+        line-height: 32px;
+        cursor: pointer;
+        vertical-align: middle;
+
+        &:nth-of-type(1) {
+            background-image: url("../../images/header-mask-logo-games.svg");
+            margin-left: 0;
+        }
+
+        &:nth-of-type(2) {
+            background-image: url("../../images/header-mask-logo-store.svg");
+        }
+
+        &:nth-of-type(3) {
+            background-image: url("../../images/header-mask-logo-news.svg");
+        }
+
+        &:nth-of-type(4) {
+            background-image: url("../../images/header-mask-logo-epic.svg");
+        }
+
+        &:nth-of-type(5) {
+            background-image: url("../../images/header-mask-logo-support.svg");
+        }
+
+        &:hover {
+            filter: @svg-orange-filter;
+        }
+    }
+
+    &__copyright-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 155px 25px 85px;
+        background-color: @orange;
+    }
+
+    &__copyright {
+        color: @white;
+        margin: 0;
+        font-size: 13px;
+        line-height: 1.54;
+    }
+
+    &__document-link {
+        color: @white;
+        margin: 0 25px 0 0;
+        font-size: 13px;
+        letter-spacing: -.4px;
+        line-height: 1.54;
+        cursor: pointer;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
