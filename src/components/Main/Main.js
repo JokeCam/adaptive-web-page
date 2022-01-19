@@ -2,11 +2,11 @@ import Advertisement from "./Advertisement/Advertisement";
 import About from "./About/About";
 import Social from "./Social/Social";
 import Links from "./Links/Links";
+import Rating from "./Rating/Rating"
 import { useState, useEffect } from "react"
-
-import dsBanner from "../../images/ds1-banner.jpg";
 import classnames from "classnames";
 
+import dsBanner from "../../images/ds1-banner.jpg";
 import "./Main.less";
 
 function Main(props) {
@@ -39,6 +39,7 @@ function Main(props) {
             <About />
             <Social />
             <Links />
+            <Rating />
         </main>
     )
 };
