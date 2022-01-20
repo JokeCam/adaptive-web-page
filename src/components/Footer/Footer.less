@@ -14,11 +14,32 @@
         align-items: center;
         justify-content: space-between;
         margin: 0 84px 60px;
+        
+        @media (max-width: 1200px) {
+            flex-wrap: wrap;
+            row-gap: 25px;
+        }
+
+        @media (max-width: 990px) {
+            margin: 0 15px 16px;
+        }
+
+        @media (max-width: 770px) {
+            align-items: flex-start;
+            justify-content: flex-start;
+            margin: 0 15px 20px;
+        }
     }
 
     &__about-links {
         display: flex;
         align-items: center;
+
+        @media (max-width: 770px) {
+            flex-direction: column;
+            align-items: flex-start;
+            row-gap: 25px;
+        }
     }
 
     &__about-links-image {
@@ -35,6 +56,14 @@
         text-decoration: none;
         cursor: pointer;
 
+        @media (max-width: 1025px) {
+            font-size: 15px;
+        }
+
+        @media (max-width: 770px) {
+            margin-left: 15px;
+        }
+
         &:hover {
             color: @orange;
         }
@@ -43,6 +72,24 @@
     &__social-links {
         display: flex;
         align-items: center;
+
+        @media (max-width: 1200px) {
+            flex-basis: 100%;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        @media (max-width: 770px) {
+            flex-basis: 75%;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 440px) {
+            margin-top: 20px;
+            row-gap: 10px;
+        }
     }
 
     &__social-link {
@@ -56,6 +103,10 @@
         margin-right: 16px;
         text-decoration: none;
         cursor: pointer;
+
+        @media (max-width: 390px) {
+            margin-right: 12px;
+        }
 
         &:last-child {
             margin-right: 0;
@@ -75,6 +126,16 @@
         display: flex;
         align-items: center;
         margin: 0 0 84px 84px;
+
+        @media (max-width: 1337px) {
+            flex-wrap: wrap;
+            row-gap: 80px;
+            margin: 0 0 45px 84px;
+        }
+
+        @media (max-width: 990px) {
+            margin: 0 0 45px 15px;
+        }
     }
 
     &__additional-links-container {
@@ -82,6 +143,10 @@
 
         &:last-child {
             margin-right: 110px;
+        }
+
+        @media (max-width: 770px) {
+            margin-right: 45px;
         }
     }
 
@@ -135,17 +200,33 @@
         }
     }
 
+    &__services-links-container {
+
+        @media (max-width: 1337px) {
+            flex-basis: 100%;
+        }
+
+        @media (max-width: 770px) {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+
     &__services-text {
         color: @white;
         font-size: 12px;
         letter-spacing: .4px;
         line-height: 1.2;
         margin-bottom: 8px;
+
+        @media (max-width: 770px) {
+            flex-basis: 100%;
+        }
     }
 
     &__services-link {
         color: @white;
-        margin-left: 25px;
+        margin-right: 25px;
         border: none;
         padding: 0;
         color: transparent;
@@ -161,7 +242,6 @@
 
         &:nth-of-type(1) {
             background-image: url("../../images/header-mask-logo-games.svg");
-            margin-left: 0;
         }
 
         &:nth-of-type(2) {
@@ -178,6 +258,7 @@
 
         &:nth-of-type(5) {
             background-image: url("../../images/header-mask-logo-support.svg");
+            margin-right: 0;
         }
 
         &:hover {
@@ -191,6 +272,13 @@
         justify-content: space-between;
         padding: 20px 155px 25px 85px;
         background-color: @orange;
+
+        @media (max-width: 1337px) {
+            flex-wrap: wrap;
+            justify-content: center;
+            row-gap: 40px;
+            padding: 1.5% 1.5%;
+        }
     }
 
     &__copyright {
@@ -198,6 +286,15 @@
         margin: 0;
         font-size: 13px;
         line-height: 1.54;
+    }
+
+    &__document-links-container {
+
+        @media (max-width: 1200px) {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
     }
 
     &__document-link {

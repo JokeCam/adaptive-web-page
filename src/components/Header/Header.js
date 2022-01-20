@@ -30,6 +30,7 @@ function Header(props) {
         <header className="header">
             <div className={headerLogoClass}/>
             <div className="header__menu">
+                <button className="header__menu-button"/>
                 <a className="header__menu-link" target="_blank" href="#">GAMES</a>
                 <a className="header__menu-link" target="_blank" href="#">STORE</a>
                 <a className="header__menu-link" target="_blank" href="#">NEWS</a>
@@ -41,6 +42,7 @@ function Header(props) {
                     <input className="header__search-input" type="text" placeholder="Search"></input>
                     <button className="header__search-button"></button>
                 </div>
+                <div className="header__search-menu-button-decor header__search-menu-button-decor_first"></div>
                 <button className="header__search-menu-button"></button>
                 <div className="header__search-menu-button-decor"></div>
                 <button className="header__search-menu-button"></button>

@@ -7,11 +7,19 @@
     background-color: @light-grey;
     font-family: ITCAvantGardeStd-Md, sans-serif;
 
+    @media (max-width: 1025px) {
+        min-width: 100%;
+    }
+
     &__title-container {
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding: 35px 80px;
+
+        @media (max-width: 1025px) {
+            padding: 30px 0 30px 3%;
+        }
     }
 
     &__title {
@@ -20,12 +28,32 @@
         letter-spacing: .4px;
         line-height: 1.2;
         color: @darker-blue;
+
+        @media (max-width: 770px) {
+            font-size: 24px;
+        }
+    }
+
+    &__cards-media {
+        display: none;
+        
+        @media (max-width: 1025px) {
+            display: flex;
+            flex-direction: column;
+            min-width: 100%;
+            align-content: stretch;
+            align-items: stretch;
+        }
     }
 
     &__buttons-container {
         display: flex;
         align-items: center;
         column-gap: 16px;
+
+        @media (max-width: 1025px) {
+            display: none;
+        }
     }
 
     &__button {
@@ -44,6 +72,14 @@
             transform: scaleX(-1);
         }
     }
+    
+    &__slider {
+        display: block;
+
+        @media (max-width: 1025px) {
+            display: none;
+        }
+    }
 
     &__card {
         margin: 0 3%;
@@ -51,6 +87,12 @@
         justify-content: center;
         outline: none;
         cursor: pointer;
+
+        @media (max-width: 1025px) {
+            max-width: 100%;
+            max-height: auto;
+            display: block;
+        }
     }
 
     &__link {
@@ -66,6 +108,20 @@
 
         &:hover {
             transform: scale(0.95);
+
+            @media (max-width: 1025px) {
+                transform: scale(1);
+            }
+        }
+
+        @media (max-width: 1600px) {
+            max-width: 92%;
+        }
+
+        @media (max-width: 1025px) {
+            min-width: none;
+            min-width: 100%;
+            max-height: auto;
         }
     }
 
@@ -74,6 +130,10 @@
         font-size: 24px;
         font-weight: 500;
         line-height: 29px;
+
+        @media (max-width: 770px) {
+            font-size: 18px;
+        }
     }
 
     &__link-button-container {

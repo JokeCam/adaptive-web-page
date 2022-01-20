@@ -4,6 +4,7 @@ import AdditionalParagraph from "./AdditionalParagraph/AdditionalParagraph";
 
 import "./About.less";
 import dsText from "../../../images/dark-souls-text.png";
+import dsBannerMedia from "../../../images/ds1-banner-media.png"
 
 function About() {
     const [pageYOffset, setPageYOffset] = useState(0);
@@ -38,6 +39,7 @@ function About() {
                     <p className="about__intro-text"><span className="about__intro-text-span">Genres:</span> RPG</p>
                     <p className="about__intro-text"><span className="about__intro-text-span">Developer:</span> FromSoftware, Inc</p>
                 </div>
+                <img className="about__intro-banner" src={dsBannerMedia}></img>
             </div>
             <div className="about__text-container">
                 <p className={aboutTextClass}>

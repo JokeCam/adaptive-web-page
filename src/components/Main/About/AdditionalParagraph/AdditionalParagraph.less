@@ -8,11 +8,19 @@
     flex-direction: column;
     align-items: center;
 
+    @media (max-width: 770px) {
+        padding: 95px 16px 45px;
+    }
+
     &__text {
         color: @white;
         font-family: ITCAvantGardeStd-Md, sans-serif;
         font-size: 16px;
         margin: 0 0 16px;
+
+        @media (max-width: 1025px) {
+            font-size: 12px;
+        }
 
         & span {
             font-weight: bold;

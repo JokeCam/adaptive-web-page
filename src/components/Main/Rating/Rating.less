@@ -6,6 +6,14 @@
     min-height: 120px;
     padding-left: 5%;
 
+    @media (max-width: 990px) {
+        flex-direction: column;
+    }
+
+    &__image-container {
+        margin: 20px 0 25px;
+    }
+
     &__image {
         max-width: 80px;
         max-height: 80px;
@@ -14,5 +22,11 @@
 
     &__text {
         margin: 0 12px;
+
+        @media (max-width: 990px) {
+            text-align: center;
+            margin: 0px 0px 70px;
+        }
+    
     }
 }

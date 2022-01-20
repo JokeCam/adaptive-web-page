@@ -30,61 +30,83 @@ function Carousel() {
                     <button className="carousel__button" onClick={handleClickNext}></button>
                 </div>
             </div>
-            <Slider
-                ref={sliderRef}
-                dots={false}
-                infinite={true}
-                arrows={false}
-                speed={500}
-                slidesToShow={3}
-                slidesToScroll={1}
-                adaptiveHeight={true}
-                centerMode={true}
-                centerPadding="40px"
-                easing="ease-in-out"
-            >
-                <div className="carousel__card">
-                    <a className="carousel__link" target="_blank" href="#">
-                        <img className="carousel__image" src={eldenRing} />
-                        <h3 className="carousel__card-title">ELDEN RING</h3>
-                    </a>
-                </div>
+            <div className="carousel__slider">
+                <Slider
+                    ref={sliderRef}
+                    dots={false}
+                    infinite={true}
+                    arrows={false}
+                    speed={500}
+                    slidesToShow={3}
+                    slidesToScroll={1}
+                    adaptiveHeight={true}
+                    centerMode={true}
+                    centerPadding="40px"
+                    easing="ease-in-out"
+                >
+                    <div className="carousel__card">
+                        <a className="carousel__link" target="_blank" href="#">
+                            <img className="carousel__image" src={eldenRing} />
+                            <h3 className="carousel__card-title">ELDEN RING</h3>
+                        </a>
+                    </div>
 
+                    <div className="carousel__card">
+                        <a className="carousel__link" target="_blank" href="#">
+                            <img className="carousel__image" src={darkSoulsTrilogy} />
+                            <h3 className="carousel__card-title">DARK SOULS TRILOGY</h3>
+                        </a>
+                    </div>
+
+                    <div className="carousel__card">
+                        <a className="carousel__link" target="_blank" href="#">
+                            <img className="carousel__image" src={darkSoulsRemastered} />
+                            <h3 className="carousel__card-title">DARK SOULS REMASTERED</h3>
+                        </a>
+                    </div>
+
+                    <div className="carousel__card">
+                        <a className="carousel__link" target="_blank" href="#">
+                            <img className="carousel__image" src={darkSoulsThree} />
+                            <h3 className="carousel__card-title">DARK SOULS III</h3>
+                        </a>
+                    </div>
+
+                    <div className="carousel__card">
+                        <a className="carousel__link" target="_blank" href="#">
+                            <img className="carousel__image" src={darkSoulsTwo} />
+                            <h3 className="carousel__card-title">DARK SOULS II</h3>
+                        </a>
+                    </div>
+
+                    <div className="carousel__card">
+                        <a className="carousel__link" target="_blank" href="#">
+                            <img className="carousel__image" src={digimonSurive} />
+                            <h3 className="carousel__card-title">DIGIMON SURVIVE</h3>
+                        </a>
+                    </div>
+                </Slider>
+            </div>
+            <div className="carousel__cards-media">
                 <div className="carousel__card">
                     <a className="carousel__link" target="_blank" href="#">
                         <img className="carousel__image" src={darkSoulsTrilogy} />
                         <h3 className="carousel__card-title">DARK SOULS TRILOGY</h3>
                     </a>
                 </div>
-
                 <div className="carousel__card">
                     <a className="carousel__link" target="_blank" href="#">
                         <img className="carousel__image" src={darkSoulsRemastered} />
                         <h3 className="carousel__card-title">DARK SOULS REMASTERED</h3>
                     </a>
                 </div>
-
                 <div className="carousel__card">
                     <a className="carousel__link" target="_blank" href="#">
                         <img className="carousel__image" src={darkSoulsThree} />
                         <h3 className="carousel__card-title">DARK SOULS III</h3>
                     </a>
                 </div>
-
-                <div className="carousel__card">
-                    <a className="carousel__link" target="_blank" href="#">
-                        <img className="carousel__image" src={darkSoulsTwo} />
-                        <h3 className="carousel__card-title">DARK SOULS II</h3>
-                    </a>
-                </div>
-
-                <div className="carousel__card">
-                    <a className="carousel__link" target="_blank" href="#">
-                        <img className="carousel__image" src={digimonSurive} />
-                        <h3 className="carousel__card-title">DIGIMON SURVIVE</h3>
-                    </a>
-                </div>
-            </Slider>
+            </div>
             <div className="carousel__link-button-container">
                 <button className="carousel__link-button">SEE ALL GAMES</button>
             </div>
