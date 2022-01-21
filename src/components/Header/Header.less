@@ -92,6 +92,11 @@
         width: 28px;
         height: 28px;
         cursor: pointer;
+        transition: background-image 0.15s;
+
+        &_active {
+            background-image: url("../../images/header-close-icon.svg");
+        }
 
         @media (max-width: 1025px) {
             display: block;

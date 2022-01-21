@@ -1,0 +1,99 @@
+@import url("../../../common/style/color.less");
+
+@keyframes slideFromTop {
+    from {
+        top: -100%;
+    }
+
+    to {
+        top: 40px;
+    }
+}
+
+@keyframes slideToTop {
+    from {
+        top: 40px;
+    }
+
+    to {
+        top: -100%;
+    }
+}
+
+.menu-popup {
+    display: none;
+    position: fixed;
+    flex-direction: column;
+    top: 40px;
+    min-width: 100%;
+    min-height: calc(100% - 40px);
+    background-color: @darker-blue;
+    z-index: 2;
+    font-family: ITCAvantGardeStd-Md, sans-serif;
+
+    &_displayed {
+        display: flex;
+        animation: slideFromTop 0.5s;
+
+        @media (min-width: 1020px) {
+            display: none;
+        }
+    }
+
+    &_hidden {
+        display: flex;
+        animation: slideToTop 0.3s;
+        top: -100%;
+    }
+
+    &__form {
+        padding: 24px 15px;
+    }
+
+    &__input {
+        border-radius: 4px;
+        border: none;
+        outline: none;
+        padding: 6px 44px 6px 12px;
+        min-width: calc(100% - 56px);
+        font-size: 16px;
+        color: @darker-grey;
+    }
+
+    &__search-button {
+        position: absolute;
+        right: 25px;
+        background-image: url("../../../images/search-icon.svg");
+        background-repeat: no-repeat;
+        background-color: transparent;
+        background-position: center;
+        background-size: cover;
+        padding: 0;
+        outline: none;
+        border: none;
+        width: 30px;
+        height: 30px;
+    }
+
+    &__button {
+        font-size: 20px;
+        text-align: left;
+        padding: 15px;
+        color: @white;
+        outline: none;
+        border: none;
+        border-bottom: 0.5px solid @darker-white;
+        background-color: transparent;
+        transition: all 0.2s;
+        cursor: pointer;
+
+        &:last-child {
+            border-bottom: none;
+        }
+
+        &:hover {
+            color: @darker-blue;
+            background-color: @darker-white;
+        }
+    }
+}
